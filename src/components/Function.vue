@@ -1,4 +1,4 @@
-<template lang="">
+<!-- <template lang="">
   <h1 v-on:mousemove="getConsole()">Function Component</h1>
   <button v-on:click="getData('Button 1 clicked')">Click me</button>
   <button v-on:dblclick="getData('Button double clicked')">Click me</button>
@@ -19,6 +19,23 @@ export default {
     getConsole() {
       console.log("function called");
     },
+  },
+};
+</script>
+<style lang=""></style> -->
+
+<template lang="">
+  <input type="text" v-model="count" />
+  <h1>Two way binding</h1>
+  <h1>{{ count }}</h1>
+</template>
+<script>
+export default {
+  name: "Home",
+  data() {
+    return {
+      count: 0,
+    };
   },
 };
 </script>
