@@ -1,0 +1,25 @@
+<template lang="">
+  <h1 v-on:mousemove="getConsole()">Function Component</h1>
+  <button v-on:click="getData('Button 1 clicked')">Click me</button>
+  <button v-on:dblclick="getData('Button double clicked')">Click me</button>
+  <h2>{{ count }}</h2>
+</template>
+<script>
+export default {
+  name: "Home",
+  data() {
+    return {
+      count: 0,
+    };
+  },
+  methods: {
+    getData(data) {
+      this.count = this.count + 1;
+    },
+    getConsole() {
+      console.log("function called");
+    },
+  },
+};
+</script>
+<style lang=""></style>
