@@ -1,6 +1,5 @@
 <template>
   <div class="hello">
-    <h1>Welcome to the Vue Js</h1>
     <h1>{{ msg }}</h1>
   </div>
 </template>
@@ -15,4 +14,8 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped></style>
+<style scoped>
+h1 {
+  color: aqua;
+}
+</style>

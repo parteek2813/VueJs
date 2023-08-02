@@ -1,14 +1,17 @@
 <template>
-  <HelloWorld msg="This is from App msg" />
+  <HelloWorld msg="Welcome to vue js" />
+  <HomeCom />
 </template>
 
 <script>
 import HelloWorld from "./components/HelloWorld.vue";
+import HomeCom from "./components/HomeCom.vue";
 
 export default {
   name: "App",
   components: {
     HelloWorld,
+    HomeCom,
   },
 };
 </script>
