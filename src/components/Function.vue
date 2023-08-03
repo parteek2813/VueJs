@@ -25,17 +25,28 @@ export default {
 <style lang=""></style> -->
 
 <template lang="">
-  <input type="text" v-model="count" />
-  <h1>Two way binding</h1>
-  <h1>{{ count }}</h1>
+  <h1>Input field demo</h1>
+  <input type="text" placeholder="enter email" v-model="email" />
+  <br />
+  <br />
+  <input type="text" placeholder="enter password" v-model="password" />
+  <br />
+  <br />
+  <button v-on:click="getData()" type="button">Get Values</button>
 </template>
 <script>
 export default {
   name: "Home",
   data() {
     return {
-      count: 0,
+      email: null,
+      password: null,
     };
+  },
+  methods: {
+    getData() {
+      console.log("value: ", this.email, this.password);
+    },
   },
 };
 </script>
