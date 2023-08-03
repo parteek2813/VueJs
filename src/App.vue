@@ -1,5 +1,5 @@
 <template>
-  <Home />
+  <HtmlBind />
 </template>
 
 <script>
@@ -10,6 +10,7 @@ import Checkboxes from "./components/Checkbox.vue";
 import IfElse from "./components/IfElse.vue";
 import Parent from "./components/Parent.vue";
 import Home from "./components/Home.vue";
+import HtmlBind from "./components/HtmlBind.vue";
 
 export default {
   name: "App",
@@ -21,6 +22,7 @@ export default {
     IfElse,
     Parent,
     Home,
+    HtmlBind,
   },
 };
 </script>
