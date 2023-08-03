@@ -1,5 +1,5 @@
 <template>
-  <IfElse />
+  <Parent />
 </template>
 
 <script>
@@ -8,6 +8,7 @@ import HomeCom from "./components/HomeCom.vue";
 import Function from "./components/Function.vue";
 import Checkboxes from "./components/Checkbox.vue";
 import IfElse from "./components/IfElse.vue";
+import Parent from "./components/Parent.vue";
 
 export default {
   name: "App",
@@ -17,6 +18,7 @@ export default {
     Function,
     Checkboxes,
     IfElse,
+    Parent,
   },
 };
 </script>
