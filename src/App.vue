@@ -1,11 +1,12 @@
 <template>
-  <Function />
+  <Checkboxes />
 </template>
 
 <script>
 import HelloWorld from "./components/HelloWorld.vue";
 import HomeCom from "./components/HomeCom.vue";
 import Function from "./components/Function.vue";
+import Checkboxes from "./components/Checkbox.vue";
 
 export default {
   name: "App",
@@ -13,6 +14,7 @@ export default {
     HelloWorld,
     HomeCom,
     Function,
+    Checkboxes,
   },
 };
 </script>
