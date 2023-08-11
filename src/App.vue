@@ -1,5 +1,5 @@
 <template>
-  <User />
+  <ref />
 </template>
 
 <script>
@@ -13,6 +13,7 @@ import Home from "./components/Home.vue";
 import HtmlBind from "./components/HtmlBind.vue";
 import ClassBind from "./components/ClassBind.vue";
 import User from "./components/User.vue";
+import ref from "./components/ref.vue";
 
 export default {
   name: "App",
@@ -27,6 +28,7 @@ export default {
     HtmlBind,
     ClassBind,
     User,
+    ref,
   },
 };
 </script>
