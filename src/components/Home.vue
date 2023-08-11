@@ -1,33 +1,28 @@
-<template lang="">
-  <h1>Reuse Component</h1>
-  <ul>
-    <li v-for="item in users" :key="item.name">
-      <User :data="item" :getData="getData" />
-    </li>
-  </ul>
+<template>
+  <div>
+    <h1>Reuse Component</h1>
+    <User @send-user-name="handleUserName" />
+  </div>
 </template>
+
 <script>
-import User from "./UserCom.vue";
+import User from "./User.vue";
+
 export default {
   name: "Home",
   components: {
     User,
   },
   methods: {
-    getData(name) {
+    handleUserName(name) {
       alert(name);
     },
   },
-  data() {
-    return {
-      users: [
-        { name: "Parteek", email: "parteek@gmail.com" },
-        { name: "sam", email: "sam@gmail.com" },
-        { name: "peter", email: "peter@gmail.com" },
-        { name: "bruce", email: "bruce@gmail.com" },
-      ],
-    };
-  },
 };
 </script>
-<style lang=""></style>
+
+<style scoped>
+h1 {
+  color: orange;
+}
+</style>
