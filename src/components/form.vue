@@ -1,9 +1,11 @@
 <template lang="html">
   <div class="heading">
     <h1>Simple Form</h1>
+    <ul>
+      <li v-for="item in error" v-bind:key="item">{{ item }} not valid!</li>
+    </ul>
     <form>
       <div>
-        <p>{{ form }}</p>
         <label for="email">Email</label>
         <!-- There are two methods of defining and getting the value from 
         the input box.... one way is to define [v-model=data.state or form.email] is this case
@@ -72,11 +74,23 @@ export default {
         technology: [],
         gender: [],
       },
+      error: [],
     };
   },
   methods: {
     login() {
-      console.log("Login data", this.form);
+      this.error = [];
+      for (const item in this.form) {
+        if (this.form[item] === "" || this.form[item].length === 0) {
+          this.error.push(item);
+        }
+      }
+
+      if (this.error.length === 0) {
+        alert("data submitted");
+      }
+
+      console.log(this.form, this.error);
     },
   },
 };
