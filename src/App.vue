@@ -1,5 +1,5 @@
 <template>
-  <Modifiers />
+  <p1 />
 </template>
 
 <script>
@@ -16,6 +16,7 @@ import User from "./components/User.vue";
 import ref from "./components/ref.vue";
 import Form from "./components/form.vue";
 import Modifiers from "./components/Modifiers.vue";
+import p1 from "./components/p1.vue";
 
 export default {
   name: "App",
@@ -33,6 +34,7 @@ export default {
     ref,
     Form,
     Modifiers,
+    p1
   },
 };
 </script>
