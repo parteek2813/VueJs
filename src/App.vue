@@ -1,5 +1,5 @@
 <template>
-  <Form />
+  <Modifiers />
 </template>
 
 <script>
@@ -15,6 +15,7 @@ import ClassBind from "./components/ClassBind.vue";
 import User from "./components/User.vue";
 import ref from "./components/ref.vue";
 import Form from "./components/form.vue";
+import Modifiers from "./components/Modifiers.vue";
 
 export default {
   name: "App",
@@ -31,6 +32,7 @@ export default {
     User,
     ref,
     Form,
+    Modifiers,
   },
 };
 </script>
