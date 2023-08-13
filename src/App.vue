@@ -1,5 +1,5 @@
 <template>
-  <Watcher />
+  <Slots />
 </template>
 
 <script>
@@ -18,6 +18,7 @@ import Form from "./components/form.vue";
 import Modifiers from "./components/Modifiers.vue";
 import p1 from "./components/p1.vue";
 import Watcher from "./components/watcher.vue";
+import Slots from "./components/Slots.vue";
 
 export default {
   name: "App",
@@ -32,12 +33,14 @@ export default {
     HtmlBind,
     ClassBind,
     User,
+    Slots,
     ref,
     Form,
     Modifiers,
     p1,
-    Watcher
-  },
+    Watcher,
+    Slots
+},
 };
 </script>
 
