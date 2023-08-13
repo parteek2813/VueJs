@@ -1,5 +1,5 @@
 <template>
-  <p1 />
+  <Watcher />
 </template>
 
 <script>
@@ -17,6 +17,7 @@ import ref from "./components/ref.vue";
 import Form from "./components/form.vue";
 import Modifiers from "./components/Modifiers.vue";
 import p1 from "./components/p1.vue";
+import Watcher from "./components/watcher.vue";
 
 export default {
   name: "App",
@@ -34,7 +35,8 @@ export default {
     ref,
     Form,
     Modifiers,
-    p1
+    p1,
+    Watcher
   },
 };
 </script>
