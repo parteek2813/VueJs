@@ -1,5 +1,6 @@
 <template>
-  <Slots />
+  <button @click="changeTab"> Show next component</button>
+  <component :is="currentComponent"></component>
 </template>
 
 <script>
@@ -40,7 +41,41 @@ export default {
     p1,
     Watcher,
     Slots
-},
+    },
+    data(){
+      return{
+        components: [
+        HelloWorld,
+        HomeCom,
+        Function,
+        Checkboxes,
+        IfElse,
+        Parent,
+        Home,
+        HtmlBind,
+        ClassBind,
+        User,
+        Slots,
+        ref,
+        Form,
+        Modifiers,
+        p1,
+        Watcher,
+        Slots
+        ],
+        currentComponentIndex: 0
+      }
+    },
+    computed: {
+      currentComponent(){
+        return this.components[this.currentComponentIndex]
+      }
+    },
+    methods:{
+      changeTab(){
+        this.currentComponentIndex = (this.currentComponentIndex + 1) % this.components.length
+      }
+    }
 };
 </script>
 
