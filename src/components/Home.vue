@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <div>
     <h1>Reuse Component {{ name }}</h1>
     <User @send-user-name="handleUserName" />
@@ -39,6 +39,31 @@ export default {
 h1 {
   color: orange;
 }
+</style> -->
+
+
+<template lang="">
+  <h1>Home component</h1>
+  <button v-on:click="show=!show">Toggle</button>
+  <User v-if="show" />
+</template>
+<script>
+import User from './User.vue';
+export default {
+  name: "Home",
+  data(){
+    return {
+      show: true,
+    }
+  },
+  components: {
+    User
+  }
+}
+
+</script>
+<style lang="">
+  
 </style>
 
 
