@@ -16,6 +16,12 @@ export default {
       this.$emit("send-user-name", this.userName);
     },
   },
+  beforeMount(){
+    console.warn("before-mount", this.$el)
+  },
+  mounted(){
+    console.warn("mounted", this.$el)
+  }
 };
 </script>
 
