@@ -1,6 +1,7 @@
 <template>
-  <button @click="changeTab"> Show next component</button>
-  <component :is="currentComponent"></component>
+  <!-- <button @click="changeTab"> Show next component</button>
+  <component :is="currentComponent"></component> -->
+  <Home />
 </template>
 
 <script>
